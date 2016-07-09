@@ -28,7 +28,7 @@
                         'category'         => ZurmoModule::ADMINISTRATION_CATEGORY_GENERAL,
                         'titleLabel'       => "eval:Zurmo::t('TeamPasswordManagerModule', 'Team Password Manager Configuration')",
                         'descriptionLabel' => "eval:Zurmo::t('TeamPasswordManagerModule', 'Manage Team Password Manager Configuration')",
-                        'route'            => '/teamPasswordManager/default/apiConfigurationEdit',
+                        'route'            => '/teamPasswordManager/default/teamPasswordManagerApiConfigurationEdit',
                         'right'            => ZurmoModule::RIGHT_ACCESS_ADMINISTRATION,
                     ),
                 ),
