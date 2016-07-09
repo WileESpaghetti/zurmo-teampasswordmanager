@@ -6,7 +6,7 @@
             $form                      = new TeamPasswordManagerApiConfigurationForm();
             $form->apiUrl              = TeamPasswordManagerApiConfigurationUtil::getApiUrl();
             $form->apiUser             = TeamPasswordManagerApiConfigurationUtil::getApiUser();
-            $form->apiPass             = TeamPasswordManagerApiConfigurationUtil::getApiPass();
+            $form->apiPassword         = TeamPasswordManagerApiConfigurationUtil::getApiPassword();
             return $form;
         }
 
@@ -16,7 +16,7 @@
             {
                 TeamPasswordManagerApiConfigurationUtil::setApiUrl($form->apiUrl);
                 TeamPasswordManagerApiConfigurationUtil::setApiUser($form->apiUser);
-                TeamPasswordManagerApiConfigurationUtil::setApiPass($form->apiPass);
+                TeamPasswordManagerApiConfigurationUtil::setApiPassword($form->apiPassword);
             }
         }
     }
