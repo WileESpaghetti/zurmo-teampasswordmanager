@@ -28,3 +28,15 @@ $instanceConfig   = array(
 cd $zurmoInstallRoot/app/protected/commands
 php zurmoc updateschema super
 ```
+
+## Configuration
+
+API Configuration can be found under `Administration > Team Password Manager Configuration`. You will need to fill out
+the connection information before the module's features can be used.
+
+See: [Team Password Manager Authentication](http://teampasswordmanager.com/docs/api/#authentication)
+
+### Security considerations
+
+* Currently the configuration settings will be used for all Zurmo users, so use a credentials with appropriate access.
+* Only HTTP Basic Authentication is supported at this time.
