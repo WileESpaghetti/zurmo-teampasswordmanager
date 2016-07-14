@@ -1,0 +1,75 @@
+{
+  "id": 20,
+  "name": "www.mynewsite.com",
+  "parent_id": 19,
+  "tags": "",
+  "notes": "SEO for www.mynewsite.com.",
+  "managed_by": {
+    "id": 2,
+    "username": "alan",
+    "email_address": "alan@teampasswordmanager.com",
+    "name": "Alan",
+    "role": "Project manager"
+  },
+  "grant_all_permission": {
+    "id": -1,
+    "label": "(Do not set)"
+  },
+  "users_permissions": [
+    {
+      "user": {
+        "id": 3,
+        "username": "ann",
+        "email_address": "ann@teampasswordmanager.com",
+        "name": "Ann",
+        "role": "Normal user"
+      },
+      "permission": {
+        "id": 50,
+        "label": "Read \/ Manage passwords"
+      }
+    }
+  ],
+  "groups_permissions": [
+    {
+      "group": {
+        "id": 1,
+        "name": "SEO"
+      },
+      "permission": {
+        "id": 20,
+        "label": "Read"
+      }
+    }
+  ],
+  "num_passwords": 1,
+  "num_files": 1,
+  "user_permission": {
+    "id": 60,
+    "label": "Manage"
+  },
+  "user_can_create_passwords": true,
+  "is_leaf": true,
+  "parents": [
+    13,
+    19
+  ],
+  "archived": false,
+  "favorite": true,
+  "created_on": "2015-08-16 02:16:49",
+  "created_by": {
+    "id": 1,
+    "username": "john",
+    "email_address": "john@teampasswordmanager.com",
+    "name": "John Boss",
+    "role": "Admin"
+  },
+  "updated_on": "2015-08-16 08:37:14",
+  "updated_by": {
+    "id": 1,
+    "username": "john",
+    "email_address": "john@teampasswordmanager.com",
+    "name": "John Boss",
+    "role": "Admin"
+  }
+}
