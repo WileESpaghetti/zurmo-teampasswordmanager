@@ -17,8 +17,12 @@ the modules list
 <?php
 $instanceConfig   = array(
     'modules' => array(
-      // potentially other modules here...
-      'teamPasswordManager',
+        // potentially other modules here...
+        'teamPasswordManager' => array(
+            'modules' => array(
+                'teamPasswordManagerProjects' => array('class' => 'teamPasswordManager.modules.teamPasswordManagerProjects.TeamPasswordManagerProjectsModule'),
+            ),
+        ),
     ),
 );
 ```
