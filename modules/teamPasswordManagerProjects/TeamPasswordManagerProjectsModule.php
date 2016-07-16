@@ -1,6 +1,8 @@
 <?php
     class TeamPasswordManagerProjectsModule extends SecurableModule
     {
+        const RIGHT_CREATE_TEAM_PASSWORD_MANAGER_PROJECTS = 'Create Team Password ManagerProjects';
+
         public function getDependencies()
         {
             return array(
@@ -23,7 +25,20 @@
         {
             $metadata = array();
             $metadata['global'] = array(
+                'shortcutsCreateMenuItems' => array(
+                    array(
+                        'label'  => "eval:Zurmo::t('TeamPasswordManagerProjectsModule', 'TeamPasswordManagerProjectsModuleSingularLabel', \$translationParams)",
+                        'url'    => array('/teamPasswordManager/teamPasswordProjectsdefault/create'),
+                        'right'  => self::RIGHT_CREATE_TEAM_PASSWORD_MANAGER_PROJECTS,
+                        'mobile' => true,
+                    ),
+                ),
             );
             return $metadata;
+        }
+
+        public function getRootModelNames()
+        {
+            return array('TeamPasswordManagerProject');
         }
     }
