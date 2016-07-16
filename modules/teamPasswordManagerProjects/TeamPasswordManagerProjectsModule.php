@@ -28,7 +28,7 @@
                 'shortcutsCreateMenuItems' => array(
                     array(
                         'label'  => "eval:Zurmo::t('TeamPasswordManagerProjectsModule', 'TeamPasswordManagerProjectsModuleSingularLabel', \$translationParams)",
-                        'url'    => array('/teamPasswordManager/teamPasswordProjectsdefault/create'),
+                        'url'    => array('/teamPasswordManager/teamPasswordManagerProjects/default/create'),
                         'right'  => self::RIGHT_CREATE_TEAM_PASSWORD_MANAGER_PROJECTS,
                         'mobile' => true,
                     ),
